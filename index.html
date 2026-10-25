@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoleStreet | Sneaker Store</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="/main.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <a href="#" class="logo">SOLE<span>STREET.</span></a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="cart">Bag (<span id="cart-count">0</span>)</div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">FIND YOUR NEXT FAVORITE</p>
+        <h1>STEP INTO<br>YOUR STYLE.</h1>
+        <p>Fresh sneakers. Everyday comfort. Your own pace.</p>
+        <a class="button" href="#shop">Shop sneakers →</a>
+      </div>
+      <img
+        src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85"
+        alt="Red sneaker"
+      >
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE COLLECTION</p>
+          <h2>Find Your Pair</h2>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-category="All">All</button>
+          <button class="filter" data-category="Running">Running</button>
+          <button class="filter" data-category="Lifestyle">Lifestyle</button>
+          <button class="filter" data-category="Basketball">Basketball</button>
+        </div>
+      </div>
+
+      <div class="product-grid" id="product-grid"></div>
+      <p id="message" role="status" aria-live="polite"></p>
+
+      <section class="cart-panel">
+        <h2>Your Bag</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: <strong id="cart-total">$0.00</strong></p>
+        <button class="button" id="clear-cart">Clear bag</button>
+      </section>
+    </section>
+
+    <section class="about" id="about">
+      <h2>Made for Every Step.</h2>
+      <p>Discover shoes that match your movement and your style.</p>
+    </section>
+  </main>
+
+  <footer>© 2026 SoleStreet. Find your next step.</footer>
+</body>
+</html>
